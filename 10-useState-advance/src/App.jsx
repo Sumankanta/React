@@ -33,7 +33,7 @@ const App = () => {
     // newData.age = 24
     // setdata(newData)
 
-    setdata(prev => ({...data, age:24}))
+    setdata(prev => ({...prev, age:24}))
     }
 
 

@@ -3,16 +3,14 @@ import React from 'react'
 const App = () => {
 
   const submitHandler = (e) => {
-    e.preventDefault();
+    e.preventDefault(); //Disable the default behaviour of form submmission
     // alert('Form Submitted');
     console.log('Form Submitted');
   }
 
   return (
     <div>
-      <form onSubmit={(e) => {
-        submitHandler(e)
-      }}>
+      <form onSubmit={(e) => { submitHandler(e) }}>
         <input type="text" placeholder='Enter your name'/>
         <button>Submit</button>
       </form>
